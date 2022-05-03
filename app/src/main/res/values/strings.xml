@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Appcent NewsApp</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="news">News</string>
+    <string name="favorites">Favorites</string>
+    <string name="news_image">News image</string>
+    <string name="lorem_ipsum_sentences">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="lorem_ipsum_paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh venenatis cras sed. Malesuada nunc vel risus commodo viverra. Molestie at elementum eu facilisis sed odio morbi quis. Leo vel orci porta non pulvinar neque. Donec massa sapien faucibus et molestie ac. Malesuada fames ac turpis egestas. Feugiat nibh sed pulvinar proin gravida. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Interdum velit laoreet id donec. Amet nulla facilisi morbi tempus iaculis urna. Tincidunt dui ut ornare lectus sit amet est placerat in. Amet mauris commodo quis imperdiet massa tincidunt nunc. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor. Semper viverra nam libero justo laoreet sit amet. Pellentesque dignissim enim sit amet venenatis urna. Aliquam eleifend mi in nulla. Maecenas sed enim ut sem viverra. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Faucibus scelerisque eleifend donec pretium. Condimentum vitae sapien pellentesque habitant morbi. Ultricies integer quis auctor elit sed vulputate mi sit. Eleifend donec pretium vulputate sapien nec. Aliquet sagittis id consectetur purus ut faucibus pulvinar.</string>
+    <string name="go_to_source">Go to source</string>
+    <string name="clear_search">Clear search</string>
+    <string name="search_bar_hint">Search for a topic</string>
+    <string name="share">Share</string>
+    <string name="favorite">Favorite</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+</resources>

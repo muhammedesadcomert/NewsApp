@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_news">
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.muhammedesadcomert.appcentnewsapp.ui.news.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_navigation_news_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.muhammedesadcomert.appcentnewsapp.ui.favorites.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/action_navigation_favorites_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.muhammedesadcomert.appcentnewsapp.ui.detail.DetailFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="article"
+            app:argType="com.muhammedesadcomert.appcentnewsapp.data.model.Article" />
+        <action
+            android:id="@+id/action_navigation_detail_to_articleWebViewFragment"
+            app:destination="@id/navigation_article_web_view" />
+        <argument
+            android:name="favorite"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_article_web_view"
+        android:name="com.muhammedesadcomert.appcentnewsapp.ui.article.ArticleWebViewFragment"
+        android:label="Source"
+        tools:layout="@layout/fragment_article_web_view">
+        <argument
+            android:name="articleUrl"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
