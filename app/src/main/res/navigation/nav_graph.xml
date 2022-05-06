@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_news"
-        android:name="com.muhammedesadcomert.appcentnewsapp.ui.news.NewsFragment"
+        android:name="com.muhammedesadcomert.newsapp.ui.news.NewsFragment"
         android:label="@string/news"
         tools:layout="@layout/fragment_news">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_favorites"
-        android:name="com.muhammedesadcomert.appcentnewsapp.ui.favorites.FavoritesFragment"
+        android:name="com.muhammedesadcomert.newsapp.ui.favorites.FavoritesFragment"
         android:label="@string/favorites"
         tools:layout="@layout/fragment_favorites">
         <action
@@ -25,12 +25,12 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_detail"
-        android:name="com.muhammedesadcomert.appcentnewsapp.ui.detail.DetailFragment"
+        android:name="com.muhammedesadcomert.newsapp.ui.detail.DetailFragment"
         android:label="Details"
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="article"
-            app:argType="com.muhammedesadcomert.appcentnewsapp.data.model.Article" />
+            app:argType="com.muhammedesadcomert.newsapp.data.model.Article" />
         <action
             android:id="@+id/action_navigation_detail_to_articleWebViewFragment"
             app:destination="@id/navigation_article_web_view" />
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_article_web_view"
-        android:name="com.muhammedesadcomert.appcentnewsapp.ui.article.ArticleWebViewFragment"
+        android:name="com.muhammedesadcomert.newsapp.ui.article.ArticleWebViewFragment"
         android:label="Source"
         tools:layout="@layout/fragment_article_web_view">
         <argument
