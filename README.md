@@ -5,7 +5,6 @@ A news app made with Kotlin in Android. [NewsAPI](https://newsapi.org/) is used 
 ## 🛠 Tech Stack
 
 - [Kotlin](https://kotlinlang.org/)
-- [Kotlin Flow](https://developer.android.com/kotlin/flow)
 - [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)
 - [Navigation Component](https://developer.android.com/guide/navigation)
 - [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
