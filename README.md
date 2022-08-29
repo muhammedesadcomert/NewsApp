@@ -9,6 +9,7 @@ A news app made with Kotlin in Android. [NewsAPI](https://newsapi.org/) is used 
 - [Navigation Component](https://developer.android.com/guide/navigation)
 - [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
+- [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 - [Room](https://developer.android.com/jetpack/androidx/releases/room)
 - [Retrofit](https://square.github.io/retrofit/)
 - [OkHttp](https://square.github.io/okhttp/)
