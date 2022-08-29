@@ -1,6 +1,6 @@
 package com.muhammedesadcomert.newsapp.di
 
-import com.muhammedesadcomert.newsapp.data.remote.NewsAPI
+import com.muhammedesadcomert.newsapp.data.remote.NewsApi
 import com.muhammedesadcomert.newsapp.data.util.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -28,5 +28,5 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideNewsApi(retrofit: Retrofit): NewsAPI = retrofit.create(NewsAPI::class.java)
+    fun provideNewsApi(retrofit: Retrofit): NewsApi = retrofit.create(NewsApi::class.java)
 }
