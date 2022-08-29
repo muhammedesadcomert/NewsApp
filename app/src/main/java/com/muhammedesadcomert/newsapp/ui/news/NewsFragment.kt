@@ -9,6 +9,7 @@ import android.widget.AbsListView
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,19 +18,19 @@ import com.muhammedesadcomert.newsapp.data.util.Constants.Companion.SEARCH_NEWS_
 import com.muhammedesadcomert.newsapp.data.util.Resource
 import com.muhammedesadcomert.newsapp.databinding.FragmentNewsBinding
 import com.muhammedesadcomert.newsapp.ui.NewsApplication
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class NewsFragment : Fragment() {
 
     private var _binding: FragmentNewsBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel: NewsViewModel by activityViewModels {
-        NewsViewModelFactory((activity?.application as NewsApplication).database)
-    }
+    private val viewModel: NewsViewModel by viewModels()
 
     private lateinit var newsAdapter: NewsAdapter
 

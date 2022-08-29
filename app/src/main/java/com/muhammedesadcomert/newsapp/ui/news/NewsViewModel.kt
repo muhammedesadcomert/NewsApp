@@ -11,8 +11,11 @@ import com.muhammedesadcomert.newsapp.data.repository.ArticleRepository
 import com.muhammedesadcomert.newsapp.data.util.Constants.Companion.DEFAULT_TOPIC
 import com.muhammedesadcomert.newsapp.data.util.Constants.Companion.STARTING_PAGE_INDEX
 import com.muhammedesadcomert.newsapp.data.util.Resource
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class NewsViewModel(private val articleRepository: ArticleRepository) : ViewModel() {
+@HiltViewModel
+class NewsViewModel @Inject constructor(private val articleRepository: ArticleRepository) : ViewModel() {
 
     val articles: MutableLiveData<Resource<News>> = MutableLiveData()
     private var newsResponse: News? = null

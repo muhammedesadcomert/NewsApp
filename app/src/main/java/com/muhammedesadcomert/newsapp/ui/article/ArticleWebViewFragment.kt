@@ -10,7 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.muhammedesadcomert.newsapp.databinding.FragmentArticleWebViewBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ArticleWebViewFragment : Fragment() {
 
     private var _binding: FragmentArticleWebViewBinding? = null
@@ -20,7 +22,7 @@ class ArticleWebViewFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         _binding = FragmentArticleWebViewBinding.inflate(layoutInflater)
 

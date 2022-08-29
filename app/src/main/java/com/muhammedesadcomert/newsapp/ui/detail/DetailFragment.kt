@@ -5,25 +5,23 @@ import android.os.Bundle
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.muhammedesadcomert.newsapp.R
 import com.muhammedesadcomert.newsapp.data.model.Article
 import com.muhammedesadcomert.newsapp.databinding.FragmentDetailBinding
-import com.muhammedesadcomert.newsapp.ui.NewsApplication
 import com.muhammedesadcomert.newsapp.ui.news.NewsViewModel
-import com.muhammedesadcomert.newsapp.ui.news.NewsViewModelFactory
 import com.squareup.picasso.Picasso
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetailFragment : Fragment() {
 
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel: NewsViewModel by activityViewModels {
-        NewsViewModelFactory((activity?.application as NewsApplication).database)
-    }
+    private val viewModel: NewsViewModel by viewModels()
 
     private val args: DetailFragmentArgs by navArgs()
 
